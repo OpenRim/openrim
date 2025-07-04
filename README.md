@@ -1,324 +1,172 @@
-# 🚀 Prompt Professionnel pour Gemini-CLI - Projet OpenRim
+# OpenRim Website
 
-## 📋 INSTRUCTION PRINCIPALE
-Créez un site web complet et moderne pour **OpenRim**, une organisation open source dédiée au développement de projets collaboratifs. Le site doit parfaitement représenter l'esprit open source, être optimisé, responsive, et supporter le multilinguisme avec RTL pour l'arabe.
+## Table of Contents
+- [About OpenRim](#about-openrim)
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Development Server](#running-the-development-server)
+- [Contributing](#contributing)
+  - [Code of Conduct](#code-of-conduct)
+  - [How to Contribute](#how-to-contribute)
+  - [Reporting Issues](#reporting-issues)
+  - [Pull Request Guidelines](#pull-request-guidelines)
+- [License](#license)
 
-## 🎯 SPÉCIFICATIONS TECHNIQUES OBLIGATOIRES
+## About OpenRim
+OpenRim is an open-source organization dedicated to fostering innovation through collaborative development. We believe in the power of community to build robust, transparent, and impactful software solutions for a better world.
 
-### Stack Technologique
-- **Frontend**: React 18+ avec TypeScript (strict mode)
-- **CSS Framework**: Bootstrap 5.3+ (utiliser les dernières fonctionnalités)
+## Project Overview
+This repository contains the official website for OpenRim. The website serves as a central hub for our community, showcasing our projects, explaining our mission, and providing clear guidelines for contributions. It is designed to be modern, responsive, and multilingual, supporting English, French, and Arabic (RTL).
+
+## Technologies Used
+- **Frontend**: React 18+ with TypeScript
+- **CSS Framework**: Bootstrap 5.3+
 - **Routing**: React Router DOM v6
-- **Internationalisation**: react-i18next
-- **Build Tool**: Vite (configuration optimisée)
-- **Icons**: React Icons ou Lucide React
-- **Animations**: Framer Motion (optionnel mais recommandé)
+- **Internationalization**: react-i18next
+- **Build Tool**: Vite
+- **Icons**: Lucide React
+- **Animations**: Framer Motion (optional)
 
-### Design Requirements
-- **Style**: Design moderne, minimaliste et professionnel
-- **Responsive**: Mobile-first approach, compatible tous écrans
-- **Dark Mode**: Toggle fonctionnel avec persistence localStorage
-- **Theme Colors**: Palette cohérente avec variables CSS custom
-- **Typography**: Polices modernes (Inter, Poppins, ou similaire)
-- **Accessibility**: WCAG 2.1 AA compliant
+## Getting Started
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-### Fonctionnalités Multilinguisme
-- **Langues supportées**: Arabe (ar), Français (fr), Anglais (en)
-- **Direction**: RTL automatique pour l'arabe, LTR pour fr/en
-- **Switcher**: Dropdown élégant dans le header
-- **Persistence**: Sauvegarde de la langue choisie
-- **Fallback**: Anglais par défaut si traduction manquante
+### Prerequisites
+Make sure you have Node.js (LTS version recommended) and npm (or Yarn) installed on your system.
 
-## 📁 STRUCTURE DE PROJET EXACTE
+### Installation
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/openrim/openrim-website.git
+    cd openrim-website
+    ```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or yarn install
+    ```
 
-```
-openrim-website/
-├── public/
-│   ├── index.html
-│   ├── favicon.ico
-│   └── assets/
-│       ├── logo-light.svg
-│       ├── logo-dark.svg
-│       └── og-image.jpg
-├── src/
-│   ├── assets/
-│   │   ├── images/
-│   │   └── icons/
-│   ├── components/
-│   │   ├── common/
-│   │   │   ├── Header.tsx
-│   │   │   ├── Footer.tsx
-│   │   │   ├── Layout.tsx
-│   │   │   └── LoadingSpinner.tsx
-│   │   ├── ui/
-│   │   │   ├── Button.tsx
-│   │   │   ├── Card.tsx
-│   │   │   ├── Modal.tsx
-│   │   │   └── ThemeToggle.tsx
-│   │   ├── LanguageSwitcher.tsx
-│   │   └── ProjectCard.tsx
-│   ├── pages/
-│   │   ├── Home.tsx
-│   │   ├── About.tsx
-│   │   ├── Projects.tsx
-│   │   ├── Contribute.tsx
-│   │   └── Contact.tsx
-│   ├── hooks/
-│   │   ├── useTheme.ts
-│   │   └── useLanguage.ts
-│   ├── i18n/
-│   │   ├── index.ts
-│   │   ├── locales/
-│   │   │   ├── en.json
-│   │   │   ├── fr.json
-│   │   │   └── ar.json
-│   │   └── resources.ts
-│   ├── styles/
-│   │   ├── index.css
-│   │   ├── variables.css
-│   │   ├── themes.css
-│   │   └── rtl.css
-│   ├── types/
-│   │   └── index.ts
-│   ├── utils/
-│   │   ├── constants.ts
-│   │   └── helpers.ts
-│   ├── App.tsx
-│   ├── main.tsx
-│   └── router.tsx
-├── package.json
-├── vite.config.ts
-├── tsconfig.json
-├── tsconfig.node.json
-└── README.md
+### Running the Development Server
+To start the development server and view the website in your browser:
+
+```bash
+npm run dev
+# or yarn dev
 ```
 
-## 🎨 DESIGN GUIDELINES DÉTAILLÉES
+The application will typically be available at `http://localhost:3000`.
 
-### Header Navigation
-- Logo OpenRim (adaptable dark/light mode)
-- Menu navigation horizontal (responsive burger menu mobile)
-- Language switcher avec drapeaux
-- Dark/Light mode toggle
-- Effet glassmorphism ou ombre subtile
+## Contributing
+We welcome contributions from everyone! Whether you're a seasoned developer or just starting out, your input is valuable. Please take a moment to review our contribution guidelines.
 
-### Pages Content Specifications
+### The Forking Workflow
 
-#### 1. **Home Page**
-- Hero section avec gradient background
-- Logo OpenRim centré et animé
-- Tagline accrocheur : "Building the future through open source collaboration"
-- CTA Button "Join Our Community" / "Contribute Now" avec hover effects
-- GitHub organization stats (repositories, contributors, stars total)
-- Featured open source projects showcase
-- Open source values highlight (Collaboration, Transparency, Innovation)
-- Community testimonials et success stories
-- "Why Open Source?" section avec benefits
+1.  **Fork the Repository:** Create a personal copy of the original repository on your GitHub account. This is your workspace where you can make changes without affecting the main project.
+2.  **Clone Your Fork:** Download your forked repository to your local machine.
+3.  **Create a Branch:** For each new feature or bug fix, create a new branch in your local repository. This isolates your changes and makes it easier to manage multiple contributions.
+4.  **Make Your Changes:** Work on your branch, writing code, fixing bugs, or adding features.
+5.  **Commit Your Changes:** Save your changes with clear and descriptive commit messages.
+6.  **Push to Your Fork:** Upload your local changes to your forked repository on GitHub.
+7.  **Open a Pull Request (PR):** Propose your changes to the original repository via a Pull Request. Project maintainers will review your code, discuss changes, and merge your work if everything is in order.
 
-#### 2. **About Page**
-- Hero section avec open source illustration
-- OpenRim story et mission open source
-- Timeline de l'organisation et milestones
-- Open source values : Collaboration, Transparency, Community, Innovation
-- Team section avec contributeurs principaux
-- Statistics importantes (projets, contributeurs, commits, issues resolved)
-- Open source philosophy et impact
-- Community guidelines preview
+#### Example: How to Fork and Clone the Repository
 
-#### 3. **Projects Page**
-- Grid layout responsive des projets open source
-- Filtres par : langue de programmation, statut, difficulté, type
-- Chaque projet avec:
-  - Nom et description claire
-  - Technologies utilisées (badges colorés)
-  - GitHub repository link avec statistiques (stars, forks, issues)
-  - Status (active, seeking contributors, archived)
-  - Difficulty level (beginner, intermediate, advanced)
-  - Contributors avatars avec nombre total
-  - "Good first issue" badges
-  - License information
+1.  **Fork the Repository on GitHub:**
+    *   Go to the OpenRim project GitHub page (e.g., `https://github.com/openrim/openrim-website`).
+    *   Click the "Fork" button in the top right corner of the page.
+    *   Follow the instructions to create a fork on your GitHub account. You will now have a repository like `https://github.com/your-username/openrim-website`.
 
-#### 4. **Contribute Page**
-- Welcome message pour nouveaux contributeurs
-- Getting started guide step-by-step
-- Code of conduct complet
-- Contribution guidelines
-- Development setup instructions
-- Issue reporting process
-- Pull request guidelines
-- Community channels (Discord, Slack, forum)
-- Mentor program information
-- Recognition system (contributor of the month, etc.)
+2.  **Clone Your Fork to Your Local Machine:**
+    *   Open your terminal or command prompt.
+    *   Clone your fork using the `git clone` command:
+        ```bash
+        git clone https://github.com/your-username/openrim-website.git
+        cd openrim-website
+        ```
+    *   Add the original repository as "upstream" (this allows you to fetch the latest changes from the main project):
+        ```bash
+        git remote add upstream https://github.com/openrim/openrim-website.git
+        ```
+    *   You can verify your remotes with `git remote -v`.
 
-#### 5. **Contact Page**
-- Multiple contact methods pour différents besoins
-- General inquiries form
-- Partnership opportunities
-- Media contact
-- Community support channels
-- Social media links (GitHub, Twitter, LinkedIn, Discord)
-- Open source events et meetups
-- Newsletter signup
+### Code of Conduct
+OpenRim is committed to providing a welcoming and inclusive environment for all. Please read and adhere to our [Code of Conduct](/contribute#code-of-conduct) to ensure a positive experience for everyone.
 
-### Footer
-- Logo + mission statement brief
-- Quick links vers projets populaires
-- Community links (GitHub, Discord, Twitter)
-- Open source resources
-- License information
-- "Fork us on GitHub" button
-- Copyright info
-- Back to top button
+### How to Contribute
+For detailed step-by-step instructions on how to contribute, including development setup, please visit our [Contribute page](/contribute) on the website.
 
-## 🌍 CONFIGURATION I18N COMPLÈTE
+### Reporting Issues
+If you find a bug or have a feature request, please open an issue on our [GitHub Issues page](https://github.com/openrim/openrim-website/issues). Provide as much detail as possible to help us understand and reproduce the problem.
 
-### Fichiers de traduction requis:
+### Pull Request Guidelines
+1.  Fork the repository and create your branch from `main`.
+2.  Ensure your code adheres to the project's coding style and conventions.
+3.  Write clear, concise commit messages.
+4.  Ensure your changes pass all build and linting checks (`npm run build` and `npm run lint`).
+5.  Open a pull request to the `main` branch, describing your changes in detail.
 
-**en.json**: Toutes les clés en anglais
-**fr.json**: Traduction française complète
-**ar.json**: Traduction arabe complète
+### Commit Message Types
 
-### Clés de traduction obligatoires:
-```json
-{
-  "nav": {
-    "home": "...",
-    "about": "...",
-    "projects": "...",
-    "contribute": "...",
-    "contact": "..."
-  },
-  "home": {
-    "hero_title": "Building the future through open source",
-    "hero_subtitle": "Join OpenRim community of developers...",
-    "cta_button": "Join Our Community",
-    "cta_secondary": "Explore Projects",
-    "features": {
-      "collaboration": "Collaborative Development",
-      "transparency": "Open & Transparent",
-      "innovation": "Innovation Driven"
-    },
-    "stats": {
-      "projects": "Active Projects",
-      "contributors": "Contributors",
-      "commits": "Commits"
-    }
-  },
-  "about": {
-    "mission": "Our mission is to foster innovation through open source collaboration",
-    "values": {
-      "collaboration": "We believe in the power of working together",
-      "transparency": "Everything we do is open and transparent",
-      "community": "Building a welcoming community for all developers"
-    }
-  },
-  "projects": {
-    "title": "Our Open Source Projects",
-    "filter": {
-      "all": "All Projects",
-      "active": "Active",
-      "seeking_contributors": "Seeking Contributors",
-      "beginner_friendly": "Beginner Friendly"
-    },
-    "labels": {
-      "good_first_issue": "Good First Issue",
-      "help_wanted": "Help Wanted",
-      "license": "License"
-    }
-  },
-  "contribute": {
-    "title": "Join Our Community",
-    "subtitle": "Every contribution matters, no matter how small",
-    "getting_started": "Getting Started",
-    "code_of_conduct": "Code of Conduct",
-    "guidelines": "Contribution Guidelines"
-  },
-  "contact": {...},
-  "common": {
-    "loading": "...",
-    "error": "...",
-    "back": "..."
-  }
-}
+Clear and concise commit messages are essential for tracking changes and collaboration. They should explain *why* a change was made, not just *what* was changed.
+
+**Recommended Structure:**
+
+```
+<type>: <short, concise description>
+
+<body of message (optional)>
+
+<footer (optional, e.g., issue references)>
 ```
 
-## 🔧 CONFIGURATION FILES NÉCESSAIRES
+**Common Commit Types:**
 
-### vite.config.ts
-```typescript
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import { resolve } from 'path'
+*   `feat`: A new feature.
+*   `fix`: A bug fix.
+*   `docs`: Documentation changes only.
+*   `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing semicolons, etc.).
+*   `refactor`: A code change that neither fixes a bug nor adds a feature.
+*   `test`: Adding missing tests or correcting existing tests.
+*   `chore`: Updates to build tasks, dependency configurations, etc. (no production code changes).
+*   `perf`: A code change that improves performance.
+*   `ci`: Changes to CI configuration files and scripts.
+*   `build`: Changes that affect the build system or external dependencies (npm, vite, etc.).
 
-export default defineConfig({
-  plugins: [react()],
-  resolve: {
-    alias: {
-      '@': resolve(__dirname, 'src'),
-      '@assets': resolve(__dirname, 'src/assets'),
-      '@components': resolve(__dirname, 'src/components'),
-      '@pages': resolve(__dirname, 'src/pages'),
-      '@hooks': resolve(__dirname, 'src/hooks'),
-      '@styles': resolve(__dirname, 'src/styles'),
-      '@utils': resolve(__dirname, 'src/utils'),
-      '@types': resolve(__dirname, 'src/types'),
-      '@i18n': resolve(__dirname, 'src/i18n')
-    }
-  },
-  server: {
-    port: 3000
-  }
-})
-```
+**Examples of Good Commit Messages:**
 
-### tsconfig.json avec paths mapping
-### package.json avec toutes les dépendances
-### CSS Variables pour thèmes
-### RTL Support complet
+*   **New Feature:**
+    ```
+    feat: add dark mode toggle to header
 
-## 📱 RESPONSIVE BREAKPOINTS
-- Mobile: 320px - 767px
-- Tablet: 768px - 1023px
-- Desktop: 1024px - 1439px
-- Large: 1440px+
+    This commit introduces a new dark mode feature, allowing users to switch
+    between light and dark themes. The preference is persisted in localStorage.
+    ```
 
-## 🎭 ANIMATIONS REQUIREMENTS
-- Page transitions fluides
-- Hover effects sur tous les éléments interactifs
-- Loading states
-- Smooth scrolling
-- Parallax effects (optionnel)
+*   **Bug Fix:**
+    ```
+    fix: correct RTL text alignment in footer
 
-## 🛠️ PERFORMANCE OPTIMIZATIONS
-- Lazy loading des images
-- Code splitting par route
-- Bundle size optimization
-- SEO meta tags
-- PWA ready (optionnel)
+    Resolves an issue where text in the footer was not correctly aligned
+    when the language was set to Arabic (RTL).
+    ```
 
-## 🚀 DEPLOYMENT READY
-- Build configuration optimisée
-- Environment variables setup
-- GitHub Actions workflow (optionnel)
-- Netlify/Vercel ready
+*   **Documentation Update:**
+    ```
+    docs: update contributing guidelines in README
 
-## ✅ VALIDATION CHECKLIST
-Avant de livrer, vérifiez:
-- [ ] Toutes les pages fonctionnent parfaitement
-- [ ] Responsive sur tous les écrans
-- [ ] Dark/Light mode opérationnel
-- [ ] 3 langues avec RTL pour arabe
-- [ ] Formulaire de contact fonctionnel
-- [ ] GitHub integration et links opérationnels
-- [ ] Open source badges et statistiques
-- [ ] Performance optimisée
-- [ ] Code TypeScript strict
-- [ ] Accessibilité respectée (WCAG 2.1)
-- [ ] SEO optimisé
-- [ ] Community features fonctionnelles
-- [ ] Contribution guidelines claires
-- [ ] License information visible
+    Added a new section on how to fork the repository and clarified
+    the pull request submission process.
+    ```
 
----
+*   **Refactoring:**
+    ```
+    refactor: extract theme logic into useTheme hook
 
-**IMPORTANT**: Générez un code production-ready, bien commenté, et suivant les meilleures pratiques React/TypeScript. Le design doit être moderne, professionnel et représenter parfaitement une organisation open source avec l'esprit de collaboration, transparence et innovation. Intégrez des éléments visuels qui rappellent l'écosystème open source (GitHub, badges, statistiques, community features).
+    Moved theme state management and localStorage persistence from App.tsx
+    into a dedicated custom hook for better separation of concerns.
+    ```
+
+## License
+This project is licensed under the [MIT License](LICENSE). See the `LICENSE` file for more details.
