@@ -1,0 +1,37 @@
+/* src/styles/variables.css */
+:root {
+  --font-primary: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+
+  --color-primary: #007bff;
+  --color-primary-hover: #0056b3;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-danger: #dc3545;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+
+  --color-text-primary: #212529;
+  --color-text-secondary: #6c757d;
+  --color-heading: #343a40;
+  --color-link: #007bff;
+  --color-link-hover: #0056b3;
+
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f8f9fa;
+
+  --color-border: #dee2e6;
+
+  --color-navbar-bg: rgba(255, 255, 255, 0.8);
+  --color-footer-bg: #343a40;
+  --color-footer-text: #f8f9fa;
+
+  --shadow-sm: 0 .125rem .25rem rgba(0,0,0,.075);
+  --shadow-md: 0 .5rem 1rem rgba(0,0,0,.15);
+  --shadow-lg: 0 1rem 3rem rgba(0,0,0,.175);
+  --shadow-navbar: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+
+  --border-radius: 0.25rem;
+}

@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "projects": "Projets",
+    "contribute": "Contribuer",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero_title": "Construire l'avenir grâce à l'open source",
+    "hero_subtitle": "Rejoignez la communauté OpenRim de développeurs et d'innovateurs pour façonner l'avenir de la technologie.",
+    "cta_button": "Rejoignez Notre Communauté",
+    "cta_secondary": "Explorer les Projets",
+    "features": {
+      "collaboration": "Développement Collaboratif",
+      "transparency": "Ouvert & Transparent",
+      "innovation": "Axé sur l'Innovation"
+    },
+    "stats": {
+      "projects": "Projets Actifs",
+      "contributors": "Contributeurs",
+      "commits": "Commits"
+    }
+  },
+  "about": {
+    "mission": "Notre mission est de favoriser l'innovation par la collaboration open source, en créant des solutions logicielles percutantes pour un monde meilleur.",
+    "values": {
+      "collaboration": "Nous croyons au pouvoir de travailler ensemble, de partager les connaissances et de bâtir des communautés solides.",
+      "transparency": "Tout ce que nous faisons est ouvert et transparent, de notre code à nos processus de prise de décision.",
+      "community": "Construire une communauté accueillante et inclusive pour tous les développeurs, quels que soient leurs antécédents ou leur expérience."
+    }
+  },
+  "projects": {
+    "title": "Nos Projets Open Source",
+    "filter": {
+      "all": "Tous les Projets",
+      "active": "Actif",
+      "seeking_contributors": "Recherche de Contributeurs",
+      "beginner_friendly": "Adapté aux Débutants"
+    },
+    "labels": {
+      "good_first_issue": "Bonne Première Contribution",
+      "help_wanted": "Aide Demandée",
+      "license": "Licence"
+    }
+  },
+  "contribute": {
+    "title": "Rejoignez Notre Communauté",
+    "subtitle": "Chaque contribution compte, aussi petite soit-elle. Aidez-nous à construire des logiciels open source incroyables.",
+    "getting_started": "Démarrer",
+    "code_of_conduct": "Code de Conduite",
+    "guidelines": "Directives de Contribution"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous serions ravis de vous entendre ! Contactez-nous via différents canaux.",
+    "general_inquiries": "Demandes Générales",
+    "partnership_opportunities": "Opportunités de Partenariat",
+    "media_contact": "Contact Média",
+    "community_support": "Support Communautaire",
+    "social_media": "Médias Sociaux",
+    "newsletter_signup": "Inscription à la Newsletter"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue.",
+    "back": "Retour"
+  }
+}

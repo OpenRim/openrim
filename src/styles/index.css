@@ -1,0 +1,61 @@
+/* src/styles/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import './variables.css';
+@import './themes.css';
+@import './rtl.css';
+
+:root {
+  font-family: var(--font-primary), sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-text-primary);
+  background-color: var(--color-background-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-link);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color-link-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+  color: var(--color-heading);
+}
+
+/* Bootstrap overrides */
+.btn-primary {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-hover) !important;
+  border-color: var(--color-primary-hover) !important;
+}
+
+.navbar {
+  background-color: var(--color-navbar-bg);
+  box-shadow: var(--shadow-navbar);
+}
+
+.footer {
+  background-color: var(--color-footer-bg);
+  color: var(--color-footer-text);
+}
