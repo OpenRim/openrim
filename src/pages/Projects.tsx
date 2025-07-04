@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import ProjectCard from '@components/ProjectCard';
-import type { Project } from '../types';
+import type { Project } from '@/types';
 
 const dummyProjects: Project[] = [
   {
