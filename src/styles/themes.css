@@ -1,0 +1,33 @@
+/* src/styles/themes.css */
+
+/* Light Theme (Default) */
+body[data-theme='light'] {
+  --color-text-primary: #212529;
+  --color-text-secondary: #6c757d;
+  --color-heading: #343a40;
+  --color-link: #007bff;
+  --color-link-hover: #0056b3;
+  --color-background-primary: #ffffff;
+  --color-background-secondary: #f8f9fa;
+  --color-border: #dee2e6;
+  --color-navbar-bg: rgba(255, 255, 255, 0.8);
+  --color-footer-bg: #343a40;
+  --color-footer-text: #f8f9fa;
+  --shadow-navbar: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+/* Dark Theme */
+body[data-theme='dark'] {
+  --color-text-primary: #f8f9fa;
+  --color-text-secondary: #adb5bd;
+  --color-heading: #e9ecef;
+  --color-link: #89b4f8;
+  --color-link-hover: #6ea8fe;
+  --color-background-primary: #212529;
+  --color-background-secondary: #343a40;
+  --color-border: #495057;
+  --color-navbar-bg: rgba(33, 37, 41, 0.8);
+  --color-footer-bg: #212529;
+  --color-footer-text: #e9ecef;
+  --shadow-navbar: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}

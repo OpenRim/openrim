@@ -1,0 +1,35 @@
+/* src/styles/rtl.css */
+
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  text-align: right;
+}
+
+html[dir="rtl"] .navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0.5rem;
+}
+
+html[dir="rtl"] .dropdown-menu {
+  text-align: right;
+}
+
+/* Adjustments for Bootstrap grid system */
+html[dir="rtl"] .row {
+  direction: rtl;
+}
+
+html[dir="rtl"] .col,
+html[dir="rtl"] [class*="col-"] {
+  float: right;
+}
+
+/* Specific adjustments for components if needed */
+/* Example: if you have custom components with left/right padding/margin */
+/* html[dir="rtl"] .some-component {
+  padding-left: unset;
+  padding-right: 15px;
+} */

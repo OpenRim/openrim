@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contribute": "Contribute",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero_title": "Building the future through open source",
+    "hero_subtitle": "Join OpenRim community of developers and innovators to shape the future of technology.",
+    "cta_button": "Join Our Community",
+    "cta_secondary": "Explore Projects",
+    "features": {
+      "collaboration": "Collaborative Development",
+      "transparency": "Open & Transparent",
+      "innovation": "Innovation Driven"
+    },
+    "stats": {
+      "projects": "Active Projects",
+      "contributors": "Contributors",
+      "commits": "Commits"
+    }
+  },
+  "about": {
+    "mission": "Our mission is to foster innovation through open source collaboration, creating impactful software solutions for a better world.",
+    "values": {
+      "collaboration": "We believe in the power of working together, sharing knowledge, and building strong communities.",
+      "transparency": "Everything we do is open and transparent, from our code to our decision-making processes.",
+      "community": "Building a welcoming and inclusive community for all developers, regardless of their background or experience."
+    }
+  },
+  "projects": {
+    "title": "Our Open Source Projects",
+    "filter": {
+      "all": "All Projects",
+      "active": "Active",
+      "seeking_contributors": "Seeking Contributors",
+      "beginner_friendly": "Beginner Friendly"
+    },
+    "labels": {
+      "good_first_issue": "Good First Issue",
+      "help_wanted": "Help Wanted",
+      "license": "License"
+    }
+  },
+  "contribute": {
+    "title": "Join Our Community",
+    "subtitle": "Every contribution matters, no matter how small. Help us build amazing open source software.",
+    "getting_started": "Getting Started",
+    "code_of_conduct": "Code of Conduct",
+    "guidelines": "Contribution Guidelines"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We'd love to hear from you! Reach out to us through various channels.",
+    "general_inquiries": "General Inquiries",
+    "partnership_opportunities": "Partnership Opportunities",
+    "media_contact": "Media Contact",
+    "community_support": "Community Support",
+    "social_media": "Social Media",
+    "newsletter_signup": "Newsletter Signup"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred.",
+    "back": "Back"
+  }
+}
