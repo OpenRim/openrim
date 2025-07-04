@@ -39,8 +39,8 @@ Make sure you have Node.js (LTS version recommended) and npm (or Yarn) installed
 ### Installation
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/openrim/openrim-website.git
-    cd openrim-website
+    git clone https://github.com/openrim/openrim.git
+    cd openrim
     ```
 2.  **Install dependencies:**
     ```bash
@@ -74,20 +74,20 @@ We welcome contributions from everyone! Whether you're a seasoned developer or j
 #### Example: How to Fork and Clone the Repository
 
 1.  **Fork the Repository on GitHub:**
-    *   Go to the OpenRim project GitHub page (e.g., `https://github.com/openrim/openrim-website`).
+    *   Go to the OpenRim project GitHub page (e.g., `https://github.com/openrim/openrim`).
     *   Click the "Fork" button in the top right corner of the page.
-    *   Follow the instructions to create a fork on your GitHub account. You will now have a repository like `https://github.com/your-username/openrim-website`.
+    *   Follow the instructions to create a fork on your GitHub account. You will now have a repository like `https://github.com/your-username/openrim`.
 
 2.  **Clone Your Fork to Your Local Machine:**
     *   Open your terminal or command prompt.
     *   Clone your fork using the `git clone` command:
         ```bash
-        git clone https://github.com/your-username/openrim-website.git
-        cd openrim-website
+        git clone https://github.com/your-username/openrim.git
+        cd openrim
         ```
     *   Add the original repository as "upstream" (this allows you to fetch the latest changes from the main project):
         ```bash
-        git remote add upstream https://github.com/openrim/openrim-website.git
+        git remote add upstream https://github.com/openrim/openrim.git
         ```
     *   You can verify your remotes with `git remote -v`.
 
@@ -98,7 +98,7 @@ OpenRim is committed to providing a welcoming and inclusive environment for all.
 For detailed step-by-step instructions on how to contribute, including development setup, please visit our [Contribute page](/contribute) on the website.
 
 ### Reporting Issues
-If you find a bug or have a feature request, please open an issue on our [GitHub Issues page](https://github.com/openrim/openrim-website/issues). Provide as much detail as possible to help us understand and reproduce the problem.
+If you find a bug or have a feature request, please open an issue on our [GitHub Issues page](https://github.com/openrim/openrim/issues). Provide as much detail as possible to help us understand and reproduce the problem.
 
 ### Pull Request Guidelines
 1.  Fork the repository and create your branch from `main`.
