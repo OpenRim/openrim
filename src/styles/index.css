@@ -55,6 +55,64 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: var(--shadow-navbar);
 }
 
+/* Styles pour navbar consistants */
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .btn {
+  color: var(--color-navbar-text) !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--color-link-hover) !important;
+}
+
+.navbar .btn-link {
+  color: var(--color-navbar-text) !important;
+}
+
+/* Styles pour le mode light */
+body[data-theme='light'] .navbar .form-select {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  color: var(--color-navbar-text);
+}
+
+body[data-theme='light'] .navbar .form-select:focus {
+  background-color: #ffffff;
+  border-color: #86b7fe;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+body[data-theme='light'] .navbar .navbar-toggler {
+  border-color: #dee2e6;
+}
+
+body[data-theme='light'] .navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Styles pour le mode dark */
+body[data-theme='dark'] .navbar .form-select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--color-navbar-text);
+}
+
+body[data-theme='dark'] .navbar .form-select:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+body[data-theme='dark'] .navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+body[data-theme='dark'] .navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 .footer {
   background-color: var(--color-footer-bg);
   color: var(--color-footer-text);
