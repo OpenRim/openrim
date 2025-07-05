@@ -2,16 +2,23 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Github } from 'lucide-react';
 import Button from '@components/ui/Button';
+import useTheme from '@hooks/useTheme';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
   return (
     <div className="home-page">
       {/* Hero Section */}
-      <section className="hero-section text-center py-5 bg-primary text-white">
+      <section className="hero-section text-center py-5 text-white">
         <div className="container">
-          <img src="/assets/logo-light.svg" alt="OpenRim Logo" className="img-fluid mb-4" style={{ maxWidth: '200px' }} />
+          <img 
+            src={theme === 'light' ? '/assets/logo-light.svg' : '/assets/logo-light.svg'} 
+            alt="OpenRim Logo" 
+            className="img-fluid mb-4" 
+            style={{ maxWidth: '200px' }} 
+          />
           <h1 className="display-4 fw-bold mb-3">{t('home.hero_title')}</h1>
           <p className="lead mb-4">{t('home.hero_subtitle')}</p>
           <div className="d-flex justify-content-center gap-3">

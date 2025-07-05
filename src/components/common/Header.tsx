@@ -19,7 +19,7 @@ const Header: React.FC = () => {
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
           <img
-            src={theme === 'light' ? '/assets/logo-light.svg' : '/assets/logo-dark.svg'}
+            src={theme === 'light' ? '/assets/logo-dark.svg' : '/assets/logo-light.svg'}
             alt="OpenRim Logo"
             height="30"
           />
