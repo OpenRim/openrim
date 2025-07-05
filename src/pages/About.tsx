@@ -8,7 +8,7 @@ const About: React.FC = () => {
   return (
     <div className="about-page">
       {/* Hero Section */}
-      <section className="hero-section py-5 bg-light text-center">
+      <section className="hero-section py-5 text-center">
         <div className="container">
           <h1 className="display-4 fw-bold mb-3">{t('nav.about')} OpenRim</h1>
           <p className="lead">{t('about.mission')}</p>

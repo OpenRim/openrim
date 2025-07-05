@@ -24,6 +24,9 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+
+  background-color: var(--color-background-primary) !important;
+  color: var(--color-text-primary) !important;
 }
 
 a {
@@ -116,4 +119,141 @@ body[data-theme='dark'] .navbar .navbar-toggler-icon {
 .footer {
   background-color: var(--color-footer-bg);
   color: var(--color-footer-text);
+}
+
+/* Styles globaux pour tous les éléments */
+body {
+  background-color: var(--color-background-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Styles pour les sections principales */
+.hero-section {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  color: white !important;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section .display-4,
+.hero-section .lead {
+  color: white !important;
+}
+
+.features-section,
+.home-page section,
+main {
+  background-color: var(--color-background-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Styles pour les cartes et conteneurs */
+.card,
+.border {
+  background-color: var(--color-background-secondary) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.card-body,
+.card-text {
+  color: var(--color-text-primary) !important;
+}
+
+/* Styles pour les headings */
+h1, h2, h3, h4, h5, h6,
+.display-1, .display-2, .display-3, .display-4, .display-5, .display-6 {
+  color: var(--color-heading) !important;
+}
+
+/* Styles pour les paragraphes et texte */
+p, .lead {
+  color: var(--color-text-primary) !important;
+}
+
+/* Styles pour les conteneurs */
+.container,
+.container-fluid {
+  color: var(--color-text-primary);
+}
+
+/* Styles pour les sections */
+section {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+}
+
+/* Override Bootstrap text utilities pour le thème */
+body[data-theme='dark'] .text-dark {
+  color: var(--color-text-primary) !important;
+}
+
+body[data-theme='dark'] .text-muted {
+  color: var(--color-text-secondary) !important;
+}
+
+body[data-theme='light'] .text-white {
+  color: var(--color-text-primary) !important;
+}
+
+/* Styles pour les inputs et forms */
+.form-control,
+.form-select {
+  background-color: var(--color-background-secondary) !important;
+  border-color: var(--color-border) !important;
+  color: var(--color-text-primary) !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: var(--color-background-primary) !important;
+  border-color: var(--color-primary) !important;
+  color: var(--color-text-primary) !important;
+}
+
+/* Styles pour les boutons */
+.btn {
+  border-color: var(--color-border);
+}
+
+.btn:not(.btn-primary):not(.btn-outline-primary) {
+  background-color: var(--color-background-secondary);
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.btn:not(.btn-primary):not(.btn-outline-primary):hover {
+  background-color: var(--color-background-primary);
+  color: var(--color-text-primary);
+}
+
+/* Styles spécifiques pour la section hero */
+.hero-section {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-hover));
+  color: white !important;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section .display-4,
+.hero-section .lead {
+  color: white !important;
+}
+
+/* Styles pour les sections alternées */
+.stats-section,
+.testimonials-section {
+  background-color: var(--color-background-secondary);
+}
+
+.features-section,
+.featured-projects-section {
+  background-color: var(--color-background-primary);
+}
+
+/* Override pour les cartes dans les sections sombres en mode dark */
+body[data-theme='dark'] .features-section .card,
+body[data-theme='dark'] .featured-projects-section .card {
+  background-color: var(--color-background-secondary);
+  border-color: var(--color-border);
 }

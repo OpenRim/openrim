@@ -11,6 +11,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="footer py-4 mt-auto">
       <div className="container">
+        <hr style={{ borderColor: 'var(--color-footer-text)', opacity: 0.5 }} />
         <div className="row">
           <div className="col-md-4 mb-3">
             <Link to="/" className="d-flex align-items-center mb-2 text-decoration-none">
